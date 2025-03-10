@@ -1,0 +1,197 @@
+/* General Dashboard Styles */
+.dashboard {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #033452; /* Navbar color */
+    color: white;
+    padding: 15px 20px;
+    width: 100%; /* Ensure full-width */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar Sections */
+.left-section, .right-section {
+    display: flex;
+    align-items: center;
+}
+
+/* Menu Icon */
+.menu-icon {
+    font-size: 24px;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+/* Dashboard Title */
+.dashboard-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+/* Bold text for Project Management Tools */
+.project-management-title {
+    font-size: 22px;
+    font-weight: bold;
+    margin-right: 40px;
+}
+
+/* Navbar Icons */
+.nav-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.nav-icon:hover {
+    color: #ddd;
+}
+
+/* Dark Mode Toggle */
+.dark-mode-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 20px;
+    margin-right: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.dark-mode-toggle:hover {
+    transform: scale(1.1);
+}
+
+/* Logout Button */
+.logout-btn {
+    background: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.logout-btn svg {
+    margin-right: 5px;
+}
+
+.logout-btn:hover {
+    background: red;
+    color: white;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #033452;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+/* Sidebar Close Icon */
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+/* Content */
+.content {
+    padding: 20px;
+}
+
+/* Dark Mode */
+.dark-mode {
+    background: #121212;
+    color: white;
+}
+
+.dark-mode .navbar {
+    background-color: #222;
+}
+
+.dark-mode .sidebar {
+    background-color: #222;
+}
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background: #033452;
+    color: white;
+    padding-top: 60px;
+    transition: 0.3s;
+    box-shadow: 2px 0px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar.open {
+    left: 0;
+}
+
+/* Sidebar Close Button */
+.close-icon {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* Sidebar Buttons */
+.sidebar-btn {
+    width: 80%;
+    padding: 12px;
+    margin: 10px 0;
+    border: none;
+    background: white;
+    color: #033452;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.sidebar-btn:hover {
+    background: #0056b3;
+    color: white;
+}
